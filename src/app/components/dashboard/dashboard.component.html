@@ -1,0 +1,27 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+</nav>
+
+<!-- Sidebar navigation -->
+<div class="container-fluid">
+  <div class="content">
+    <div class="list">
+      <div class="list-header">
+        <h3>Lista de usuarios</h3>
+        <button mat-raised-button color="primary" (click)="addUser()">
+          Agregar usuario al equipo
+        </button>
+      </div>
+      <app-list [allUsers$]="allUsers$" (userEmitter)="selectUser($event)"></app-list>
+    </div>
+    <app-detail [user]="selectUser" *ngIf="selectUser" (delete)="deleteUser()"></app-detail>
+  </div>
+  <br>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" (click)="authService.SignOut()">
+        <i class="fas fa-sign-out-alt"></i>Log out
+      </a>
+    </li>
+  </ul>
+</div>

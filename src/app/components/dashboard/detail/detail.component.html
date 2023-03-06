@@ -1,0 +1,14 @@
+<div class="detail">
+  <h2>{{ user.nombre }}</h2>
+  <h4>{{ user.email }}</h4>
+  <div class="content">
+    <div>
+      <p>
+        {{ user.equipo}}
+      </p>
+    </div>
+    <div>
+      <button (click)="delete()" mat-raised-button color="warn">Delete</button>
+    </div>
+  </div>
+</div>

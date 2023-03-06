@@ -1,0 +1,17 @@
+<div class="card-container">
+  <mat-card
+    *ngFor="let usuario of allUsers$ | async"
+    (click)="selectUser(usuario)"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ usuario.nombre }}</mat-card-title>
+      <mat-card-subtitle>{{ usuario.correo }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{ usuario.equipo }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+

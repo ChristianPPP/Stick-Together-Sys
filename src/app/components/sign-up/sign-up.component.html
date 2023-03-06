@@ -1,0 +1,63 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock">
+      <h3>Registro</h3>
+
+      <div class="formGroup">
+        <input
+          type="text"
+          class="formControl"
+          placeholder="Nombre"
+          #userName
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="text"
+          class="formControl"
+          placeholder="Equipo"
+          #userTeam
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="email"
+          class="formControl"
+          placeholder="Email"
+          #userEmail
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="password"
+          class="formControl"
+          placeholder="Contraseña"
+          #userPwd
+          required
+        />
+      </div>
+
+      <div class="formGroup">
+        <input
+          type="button"
+          class="btn btnPrimary"
+          value="Registrar"
+          (click)="authService.SignUp(userEmail.value, userPwd.value, userName.value, userTeam.value)"
+        />
+      </div>
+    </div>
+
+    <div class="redirectToLogin">
+      <span
+        >Ya tienes una cuenta?
+        <span class="redirect" routerLink="/sign-in">Iniciar sesión</span></span
+      >
+    </div>
+  </div>
+</div>
