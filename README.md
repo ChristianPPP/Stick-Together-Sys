@@ -45,3 +45,8 @@ Mapa con marcador
 
 ![image](https://user-images.githubusercontent.com/74626089/223278247-85dc04d5-a596-43de-a584-c5db14716afd.png)
 
+# Release de la aplicación en Amazon Apps: 
+
+![image](https://user-images.githubusercontent.com/74626089/223296854-b6e3a29e-f05c-4ce1-9eca-e7e6b8704bfb.png)
+
+
